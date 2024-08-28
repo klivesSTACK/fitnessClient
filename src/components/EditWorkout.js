@@ -11,7 +11,7 @@ export default function EditWorkout({workoutId, getWorkouts}){
 
     // function for opening the modal
     const openEdit = (workoutId) => {
-        fetch(`http://localhost:4000/workouts/getWorkout/${workoutId}`,{
+        fetch(`https://fitnessapi-briones.onrender.com/workouts/getWorkout/${workoutId}`,{
             headers: {
                 'Content-Type': 'application/json',
                 Authorization: `Bearer ${localStorage.getItem('token')}`

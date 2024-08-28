@@ -14,7 +14,7 @@ export default function Workout(){
     function addWorkout(e) {
 
         e.preventDefault();
-        fetch('http://localhost:4000/workouts/addWorkout',{
+        fetch('https://fitnessapi-briones.onrender.com/workouts/addWorkout',{
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

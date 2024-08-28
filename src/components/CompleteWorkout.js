@@ -6,7 +6,7 @@ export default function CompleteWorkout({workoutId, getWorkouts, status}){
 
     const updateStatus = (e, workoutId) => {
         e.preventDefault();
-        fetch(`http://localhost:4000/workouts/completeWorkoutStatus/${workoutId}`,{
+        fetch(`https://fitnessapi-briones.onrender.com/workouts/completeWorkoutStatus/${workoutId}`,{
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json',

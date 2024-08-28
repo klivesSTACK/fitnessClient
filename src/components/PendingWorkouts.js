@@ -12,7 +12,7 @@ export default function PendingWorkouts(workoutName){
     const [ id, setId ] =useState('');
 
     function getWorkouts(){
-        fetch("http://localhost:4000/workouts/getMyWorkouts",{
+        fetch("https://fitnessapi-briones.onrender.com/workouts/getMyWorkouts",{
             headers: {
                 'Content-Type': 'application/json',
                 Authorization: `Bearer ${localStorage.getItem('token')}`

@@ -8,7 +8,7 @@ export default function DeleteWorkout({workoutId, getWorkouts}){
     function deleteWorkout(e, workoutId  ){
         e.preventDefault();
 
-        fetch(`http://localhost:4000/workouts/deleteWorkout/${workoutId}`,{
+        fetch(`https://fitnessapi-briones.onrender.com/workouts/deleteWorkout/${workoutId}`,{
             method: 'DELETE',
             headers: {
                 Authorization: `Bearer ${localStorage.getItem('token')}`

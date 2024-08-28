@@ -28,7 +28,7 @@ export default function Login() {
 
         // Prevents page redirection via form submission
         e.preventDefault();
-        fetch('http://localhost:4000/users/login',{
+        fetch('https://fitnessapi-briones.onrender.com/users/login',{
 
         method: 'POST',
         headers: {
@@ -73,7 +73,7 @@ export default function Login() {
 
     const retrieveUserDetails = (token) => {
         
-        fetch('http://localhost:4000/users/details', {
+        fetch('https://fitnessapi-briones.onrender.com/users/details', {
             headers: {
                 Authorization: `Bearer ${ token }`
             }
