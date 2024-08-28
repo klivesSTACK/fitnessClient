@@ -37,7 +37,7 @@ export default function EditWorkout({workoutId, getWorkouts}){
 
     const editWorkout = (e, workoutId) => {
         e.preventDefault();
-        fetch(`http://localhost:4000/workouts/updateWorkout/${workoutId}`,{
+        fetch(`https://fitnessapi-briones.onrender.com/workouts/updateWorkout/${workoutId}`,{
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json',
